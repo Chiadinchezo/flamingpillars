@@ -1,0 +1,88 @@
+/* General Dark Hacker Theme */
+body {
+  margin: 0;
+  font-family: "Courier New", monospace;
+  background: #000;
+  color: #00ff00;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background: #111;
+  border-bottom: 2px solid #00ff00;
+}
+
+header h1 {
+  font-size: 3rem;
+  text-shadow: 0 0 15px #00ff00, 0 0 30px #00d4ff;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #00d4ff;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: #00ff00;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00d4ff;
+  text-shadow: 0 0 10px #00d4ff;
+}
+
+/* Section Styling */
+section {
+  padding: 3rem 2rem;
+  border-bottom: 1px solid #00ff00;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #00d4ff;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #00ff00;
+  text-shadow: 0 0 8px #00ff00;
+}
+
+/* Projects */
+.project-list {
+  list-style: none;
+  padding: 0;
+}
+
+.project-list li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+/* Contact Links */
+a {
+  color: #00d4ff;
+}
+
+a:hover {
+  text-shadow: 0 0 5px #00ff00;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #111;
+  border-top: 2px solid #00ff00;
+  font-size: 0.9rem;
+}
