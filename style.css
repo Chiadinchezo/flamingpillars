@@ -1,1 +1,152 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Consolas', 'Courier New', monospace;
+}
+
+body {
+  background: #0a0a0a;
+  color: #eaeaea;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 50px 20px 30px;
+  background: linear-gradient(180deg, #111, #0a0a0a);
+  border-bottom: 2px solid #0f0;
+}
+
+header h1.glow {
+  font-size: 3rem;
+  color: #0f0;
+  text-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
+}
+
+header .tagline {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #bbb;
+}
+
+header nav {
+  margin-top: 20px;
+}
+
+header nav a {
+  color: #0f0;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+header nav a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #0f0;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2rem;
+  margin: 40px 0 20px;
+  color: #0f0;
+  border-left: 5px solid #0f0;
+  padding-left: 10px;
+  text-shadow: 0 0 8px #0f0;
+}
+
+/* Highlight */
+.highlight {
+  color: #0f0;
+  font-weight: bold;
+}
+
+/* About & Projects Section */
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+section p, section li {
+  margin-bottom: 12px;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+/* Projects List */
+.project-list {
+  list-style: none;
+  padding: 0;
+}
+
+.project-list li {
+  background: #111;
+  margin: 10px 0;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border-left: 4px solid #0f0;
+  transition: 0.3s;
+}
+
+.project-list li:hover {
+  background: #1a1a1a;
+  transform: translateX(5px);
+}
+
+/* Contact Section */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #111;
+  color: #0f0;
+  border: 2px solid #0f0;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  background: #0f0;
+  color: #111;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #0f0;
+}
+
+.contact-btn .icon {
+  font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  background: #111;
+  border-top: 2px solid #0f0;
+  color: #888;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
 
