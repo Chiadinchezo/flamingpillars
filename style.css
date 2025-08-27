@@ -7,40 +7,29 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #f9f9f9;
-  color: #333;
+  background: #ffffff;
+  color: #333333;
   line-height: 1.6;
-  padding: 0 1rem;
-}
-
-/* Smooth Fade-In */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-section, header, footer {
-  animation: fadeIn 1s ease-in;
 }
 
 /* ===== Header ===== */
 header {
   text-align: center;
-  padding: 2.5rem 1rem 2rem;
-  background: linear-gradient(135deg, #4a90e2, #357abd);
-  color: white;
-  border-radius: 0 0 20px 20px;
+  padding: 2.5rem 1rem;
+  background: #f4f7fb;
+  border-bottom: 2px solid #e0e6ed;
 }
 
 .glow {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
+  color: #2c3e50;
 }
 
 .tagline {
   font-size: 1.1rem;
   margin-top: 0.5rem;
-  opacity: 0.9;
+  color: #555;
 }
 
 nav {
@@ -49,14 +38,14 @@ nav {
 
 nav a {
   margin: 0 1rem;
-  color: #fff;
+  color: #357abd;
   text-decoration: none;
   font-weight: 500;
-  transition: opacity 0.3s;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-  opacity: 0.8;
+  color: #1d4e89;
 }
 
 /* ===== Section Titles ===== */
@@ -64,8 +53,8 @@ nav a:hover {
   font-size: 1.6rem;
   font-weight: 600;
   margin: 2rem 0 1rem;
-  color: #357abd;
-  border-left: 4px solid #4a90e2;
+  color: #2c3e50;
+  border-left: 4px solid #357abd;
   padding-left: 0.6rem;
 }
 
@@ -76,16 +65,17 @@ nav a:hover {
 }
 
 .project-list li {
-  margin: 0.8rem 0;
-  padding: 0.8rem;
-  background: white;
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #f9fafc;
+  border: 1px solid #e0e6ed;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  transition: transform 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .project-list li:hover {
   transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 /* ===== Contact Section ===== */
@@ -101,7 +91,7 @@ nav a:hover {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: white;
+  background: #ffffff;
   border: 1px solid #ddd;
   padding: 0.9rem 1.3rem;
   border-radius: 12px;
@@ -109,14 +99,13 @@ nav a:hover {
   font-weight: 500;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 .contact-btn:hover {
-  background: #4a90e2;
-  color: white;
-  border-color: #4a90e2;
-  box-shadow: 0 4px 12px rgba(74,144,226,0.4);
+  background: #357abd;
+  color: #ffffff;
+  border-color: #357abd;
+  box-shadow: 0 4px 12px rgba(53,122,189,0.3);
   transform: translateY(-2px);
 }
 
@@ -131,5 +120,6 @@ footer {
   margin-top: 3rem;
   font-size: 0.9rem;
   color: #555;
-  border-top: 1px solid #eee;
+  background: #f4f7fb;
+  border-top: 2px solid #e0e6ed;
 }
