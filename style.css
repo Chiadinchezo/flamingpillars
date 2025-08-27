@@ -1,132 +1,151 @@
-/* ===== Global Reset & Body ===== */
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Consolas', 'Courier New', monospace;
 }
+
 body {
-  font-family: 'Poppins', sans-serif;
-  background: #f2f5f9;
-  color: #333333;
-  line-height: 1.6;
+  background: #0a0a0a;
+  color: #eaeaea;
+  line-height: 1.7;
+  font-size: 16px;
 }
 
-/* ===== Fade-In Scroll Animation ===== */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ===== Header Styling ===== */
+/* Header */
 header {
   text-align: center;
-  padding: 2.5rem 1rem 2rem;
-  background: #ffffff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 50px 20px 30px;
+  background: linear-gradient(180deg, #111, #0a0a0a);
+  border-bottom: 2px solid #0f0;
 }
-.glow {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #2c3e50;
+
+header h1.glow {
+  font-size: 3rem;
+  color: #0f0;
+  text-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
 }
-.tagline {
-  margin-top: 0.5rem;
+
+header .tagline {
+  margin-top: 10px;
   font-size: 1.1rem;
-  color: #555555;
+  color: #bbb;
 }
-nav {
-  margin-top: 1rem;
+
+header nav {
+  margin-top: 20px;
 }
-nav a {
-  margin: 0 1rem;
-  color: #2c3e50;
+
+header nav a {
+  color: #0f0;
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s, transform 0.3s;
-}
-nav a:hover {
-  color: #4d7cbb;
-  transform: translateY(-2px);
+  margin: 0 15px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-/* ===== Section Titles ===== */
+header nav a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #0f0;
+}
+
+/* Section Titles */
 .section-title {
-  font-size: 1.6rem;
-  font-weight: 600;
-  margin: 2rem 0 1rem;
-  color: #2c3e50;
-  padding-left: 0.5rem;
-  border-left: 4px solid #4d7cbb;
+  font-size: 2rem;
+  margin: 40px 0 20px;
+  color: #0f0;
+  border-left: 5px solid #0f0;
+  padding-left: 10px;
+  text-shadow: 0 0 8px #0f0;
 }
 
-/* ===== Neumorphic Cards & Project List ===== */
+/* Highlight */
+.highlight {
+  color: #0f0;
+  font-weight: bold;
+}
+
+/* About & Projects Section */
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+section p, section li {
+  margin-bottom: 12px;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+/* Projects List */
 .project-list {
   list-style: none;
   padding: 0;
 }
+
 .project-list li {
-  margin: 1rem 0;
-  padding: 1rem;
-  background: #e0e5ec;
-  border-radius: 12px;
-  box-shadow: 6px 6px 12px #c5cad4, -6px -6px 12px #ffffff;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-.project-list li:hover {
-  box-shadow: 4px 4px 8px #c5cad4, -4px -4px 8px #ffffff;
-  transform: translateY(-5px);
+  background: #111;
+  margin: 10px 0;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border-left: 4px solid #0f0;
+  transition: 0.3s;
 }
 
-/* ===== Contact Buttons (Soft UI) ===== */
+.project-list li:hover {
+  background: #1a1a1a;
+  transform: translateX(5px);
+}
+
+/* Contact Section */
 .contact-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
-  margin-top: 1.5rem;
+  gap: 15px;
+  margin-top: 20px;
 }
+
 .contact-btn {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
-  background: #e0e5ec;
-  border-radius: 12px;
-  padding: 0.9rem 1.4rem;
-  color: #2c3e50;
-  font-weight: 500;
+  gap: 10px;
+  background: #111;
+  color: #0f0;
+  border: 2px solid #0f0;
+  padding: 12px 20px;
+  border-radius: 10px;
   text-decoration: none;
-  box-shadow: 6px 6px 16px #c5cad4, -6px -6px 16px #ffffff;
-  transition: all 0.3s ease;
-}
-.contact-btn:hover {
-  box-shadow: inset 4px 4px 8px #c5cad4, inset -4px -4px 8px #ffffff;
-  transform: scale(1.05);
-}
-.icon {
-  font-size: 1.3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-/* ===== Footer ===== */
+.contact-btn:hover {
+  background: #0f0;
+  color: #111;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #0f0;
+}
+
+.contact-btn .icon {
+  font-size: 1.2rem;
+}
+
+/* Footer */
 footer {
   text-align: center;
-  padding: 1.5rem 1rem;
-  margin-top: 3rem;
-  font-size: 0.9rem;
-  color: #555555;
-  background: #ffffff;
-  border-top: 1px solid #e0e0e0;
-  box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+  padding: 20px;
+  margin-top: 40px;
+  background: #111;
+  border-top: 2px solid #0f0;
+  color: #888;
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
-  .project-list li, .contact-btn {
-    width: 100%;
-    max-width: 350px;
-  }
+footer p {
+  font-size: 0.9rem;
 }
